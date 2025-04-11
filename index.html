@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>白白的身分頁</title>
   <style>
     body {
@@ -21,6 +20,11 @@
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
+    img.cat-photo {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+    }
     h1 {
       margin-bottom: 1rem;
     }
@@ -36,23 +40,6 @@
       padding: 1rem;
       border-radius: 8px;
       white-space: pre-line;
-    }
-    .contact-button, .companion-button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 2rem;
-      margin-right: 0.5rem;
-    }
-    .contact-box, .companion-box {
-      display: none;
-      margin-top: 1rem;
-      padding: 1rem;
-      background: #f0f0f0;
-      border-radius: 8px;
     }
     .photo-gallery {
       display: flex;
@@ -72,6 +59,69 @@
       color: #555;
       margin-top: 0.3rem;
     }
+    .contact-button, .companion-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 2rem;
+      margin-right: 0.5rem;
+    }
+    .contact-box, .companion-box {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #f0f0f0;
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.5rem;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background-color: #e8e8e8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="huahua.jpg" alt="白白" class="cat-photo">
+    <h1>白白 Baibai</h1>
+    <div class="info-item"><span class="label">品種 / 毛色：</span>Mix米克斯 / 白底乳牛虎斑 母貓</div>
+    <div class="info-item"><span class="label">來源：</span>2024/2/3 於泰山全球嘉年華社區附近撿到（與花花為同胎）</div>
+    <div class="info-item"><span class="label">生日：</span>不確定</div>
+    <div class="info-item"><span class="label">體重：</span>約5.5kg，體態偏胖</div>
+    <div class="info-item"><span class="label">結紮狀況：</span>2024/2/29 已結紮，無生育經驗</div>
+    <div class="info-item"><span class="label">晶片：</span>無</div>
+    <div class="info-item"><span class="label">疫苗施打：</span>近一次施打三合一疫苗約為2024年5-6月</div>
+    <div class="info-item"><span class="label">健康狀況：</span>大致良好，但需留意腎臟大小不一，曾於2024/4/8–4/11因急性腎炎住院</div>
+    <div class="info-item"><span class="label">性格：</span>穩定、獨立、親人親貓（不怕陌生人，對主人有佔有慾）、有地盤意識（有時會追咬麥麥後腿）、全身可嚕（特別喜歡被嚕下巴）</div>
+    <div class="info-item"><span class="label">食物偏好：</span>目前吃紐頓 I19 / S5，適應良好（也吃過洛磯山鹿肉鮭魚｜海陸饗宴）</div>
+    <div class="info-item"><span class="label">其他備註：</span>
+      <div class="notes">
+        - 非常愛玩逗貓棒，可以玩很久（捕獵能力不錯）
+        - 喜歡木天蓼與貓草，超愛吃肉泥、雞肉凍乾、蝦凍乾
+        - 喜歡木天蓼、超愛吃肉泥、雞肉凍乾、蝦凍乾
+        - 偶爾會對主人大叫（可能肚子餓或想踩奶或純粹撒嬌討摸）
+        - 喜歡在棉被上踩奶
+      </div>
+    </div>
+
+    <button class="contact-button" onclick="document.getElementById('contact').style.display='block'">
+      主人聯絡資訊
+    </button>
+  <div id="contact" class="contact-box">
+  <style>
     table {
       width: 100%;
       border-collapse: collapse;
@@ -88,58 +138,48 @@
       background-color: #ddd;
     }
   </style>
-</head>
-<body>
-  <div class="container">
-    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
-      <img src="baibai_main1.jpg" alt="白白正坐照" style="width: 50%; border-radius: 12px;">
-      <img src="baibai_main2.jpg" alt="白白大頭照" style="width: 50%; border-radius: 12px;">
-    </div>
-
-    <h1>白白 Baibai</h1>
-    <div class="info-item"><span class="label">品種 / 毛色：</span>Mix米克斯 / 白底乳牛虎斑 母貓</div>
-    <div class="info-item"><span class="label">來源：</span>2024/2/3 於泰山全球嘉年華社區附近撿到（與花花為同胎）</div>
-    <div class="info-item"><span class="label">生日：</span>不確定</div>
-    <div class="info-item"><span class="label">體重：</span>約5.5kg，體態偏胖</div>
-    <div class="info-item"><span class="label">結紮狀況：</span>2024/2/29 已結紮，無生育經驗</div>
-    <div class="info-item"><span class="label">晶片：</span>無</div>
-    <div class="info-item"><span class="label">疫苗施打：</span>近一次施打三合一疫苗約為2024年5-6月</div>
-    <div class="info-item"><span class="label">健康狀況：</span>大致良好，但需留意腎臟大小不一，曾於2024/4/8–4/11因急性腎炎住院</div>
-    <div class="info-item"><span class="label">醫療紀錄：</span>最近一次於新莊區布納動物醫院健康檢查時間為2025/4/14</div>
-    <div class="info-item"><span class="label">性格：</span>穩定、獨立、親人親貓、不怕陌生人，有地盤意識，會追咬麥麥後腿，對主人有佔有慾，全身可嚕，特別喜歡被嚕下巴</div>
-    <div class="info-item"><span class="label">食物偏好：</span>目前吃紐頓 I19 / S5，適應良好（也吃過洛磯山鹿肉鮭魚｜海陸饗宴）</div>
-    <div class="info-item"><span class="label">其他備註：</span>
-      <div class="notes">
-        - 非常愛玩逗貓棒，可以玩很久
-        - 喜歡木天蓼與貓草，超愛吃肉泥、雞肉凍乾、蝦凍乾
-        - 捕獵能力不錯
-        - 偶爾會對主人大叫（可能肚子餓或想踩奶或純粹撒嬌討摸）
-        - 喜歡在棉被上踩奶
-      </div>
-    </div>
-
-    <button class="contact-button" onclick="document.getElementById('contact').style.display='block'">
-      主人聯絡資訊
-    </button>
-    <div id="contact" class="contact-box">
-      <table>
-        <tr><th>聯絡人</th><th>手機電話</th><th>Email</th></tr>
-        <tr><td>陳俞君</td><td>0986918306</td><td>candy1210a@gmail.com</td></tr>
-        <tr><td>江承羿</td><td>0920225288</td><td>tm10071128@gmail.com</td></tr>
-        <tr><td>陳信凱</td><td>0936135530</td><td></td></tr>
-        <tr><td>顏雪菁</td><td>0926773676</td><td>emily52722@yahoo.com.tw</td></tr>
-      </table>
-    </div>
+  <table>
+    <tr>
+      <th>聯絡人</th>
+      <th>手機電話</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>陳俞君</td>
+      <td>0986918306</td>
+      <td>candy1210a@gmail.com</td>
+    </tr>
+    <tr>
+      <td>江承羿</td>
+      <td>0920225288</td>
+      <td>tm10071128@gmail.com</td>
+    </tr>
+    <tr>
+      <td>陳信凱</td>
+      <td>0936135530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>顏雪菁</td>
+      <td>0926773676</td>
+      <td>emily52722@yahoo.com.tw</td>
+    </tr>
+  </table>
+</div>
 
     <button class="companion-button" onclick="document.getElementById('companions').style.display='block'">
       其他寵物同伴
     </button>
     <div id="companions" class="companion-box">
-      <a href="index.html">花花的頁面</a><br>
+      <a href="baibai.html">花花的頁面</a><br>
       <a href="maimai.html">麥麥的頁面</a>
     </div>
 
-    <div class="photo-gallery">
+    <div class="photo-gallery"> 
+      <div class="photo-box">
+        <img src="baibai_happy" alt="在醫院大叫">
+        <div class="photo-caption">在醫院大叫</div>
+      </div>
       <div class="photo-box">
         <img src="baibai_relaxsleep.jpg" alt="擰毛巾睡姿">
         <div class="photo-caption">擰毛巾睡姿</div>
